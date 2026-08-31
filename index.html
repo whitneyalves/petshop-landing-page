@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Patas & Cia</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+<h1>🐾 Patas & Cia</h1>
+
+<input id="busca" placeholder="O que seu pet precisa?">
+
+<nav>
+  <a href="#caes">Cães</a>
+  <a href="#gatos">Gatos</a>
+  <a href="#racoes">Rações</a>
+  <a href="#brinquedos">Brinquedos</a>
+  <a href="#contato">Contato</a>
+</nav>
+
+<p>🛒 Carrinho: <span id="carrinho">0</span></p>
+</header>
+
+<section class="banner">
+<h2>O melhor cuidado para seu pet</h2>
+<p>Produtos, banho, tosa e veterinário.</p>
+<button onclick="document.getElementById('produtos').scrollIntoView()">Ver produtos</button>
+</section>
+
+<section>
+<h2>Categorias</h2>
+
+<div class="categorias">
+<img id="caes" src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=300&q=80" onclick="categoria('caes')">
+
+<img id="gatos" src="https://images.unsplash.com/photo-1518791841217-8f162f1e1131?auto=format&fit=crop&w=300&q=80" onclick="categoria('gatos')">
+
+<img id="racoes" src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=300&q=80" onclick="categoria('racoes')">
+</div>
+</section>
+
+<section id="produtos">
+<h2>Produtos</h2>
+
+<div class="produtos">
+
+<div class="produto caes racoes">
+<img src="https://images.unsplash.com/photo-1589924691995-400dc9ecc119?auto=format&fit=crop&w=500&q=80">
+<h3>Ração para Cães 10kg</h3>
+<p>R$ 189,90</p>
+<button onclick="adicionar()">Adicionar</button>
+</div>
+
+<div class="produto caes brinquedos">
+<img src="https://images.unsplash.com/photo-1535294435445-d7249524ef2e?auto=format&fit=crop&w=500&q=80">
+<h3>Brinquedo para Cães</h3>
+<p>R$ 35,90</p>
+<button onclick="adicionar()">Adicionar</button>
+</div>
+
+<div class="produto gatos racoes">
+<img src="https://images.unsplash.com/photo-1519052537078-e6302a4968d4?auto=format&fit=crop&w=500&q=80">
+<h3>Ração para Gatos 3kg</h3>
+<p>R$ 69,90</p>
+<button onclick="adicionar()">Adicionar</button>
+</div>
+
+</div>
+</section>
+
+<button id="topo" onclick="topo()">↑ Voltar ao topo</button>
+
+<footer>
+<p>© 2026 Patas & Cia</p>
+
+
+<section id="contato">
+<h2>Contato</h2>
+<p>Telefone: (19) 99999-9999</p>
+<p>WhatsApp: (19) 98888-8888</p>
+</section>
+
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
